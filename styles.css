@@ -1,0 +1,283 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.navbar{
+    /* border: solid; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(242, 242, 242)
+
+    
+
+    
+
+}
+.navbar .logo{
+    width: 50%;
+   
+
+  
+}
+.navbar .logo img{
+    /* height: 70px;
+    width: 80px; */
+    margin-left: 40px;
+    background-color: aliceblue;
+ 
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-size: 20px;
+    margin: 10px;
+  
+}
+.navbar a:hover{
+    color: red;
+    transition: all 0.5s ease;
+    text-decoration: underline;
+}
+/* hero section */
+/* https: //assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg */
+
+.hero {
+    /* border: solid; */
+        height: 65vh;
+        background-image: url(https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg);
+        background-size: cover;
+        background-position: center;
+        background-position: top;
+        display: flex;
+        margin-top:50px ;
+       
+    
+
+}
+.hero .hero-content{
+    
+    height: 100%;
+    display: flex;
+ flex-direction: column;
+ line-height: 60px;
+ margin-top: 50px;
+ padding-left: 50px;
+
+    
+}
+.hero .hero-content h1{
+    color: rgb(16, 16, 16);
+    font-size: 3rem;
+   
+}
+.hero .hero-content p{
+    color: rgb(44, 43, 43);
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.hero .hero-content h4 {
+    color: rgb(168, 163, 163);
+    font-size: 1.5rem;
+   
+}
+.hero .hero-content .btn{
+    /* display: flex; */
+        justify-content: center;
+        align-items:end;
+        padding: 9px 12px;
+        gap: 8px;
+        height: 40px;
+        width: 172px;
+        border: none;
+        background: #ec5e1c;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top:50px ;
+        color: rgb(252, 253, 254);
+       
+    
+}
+.hero .hero-content .btn:hover{
+    box-shadow: 2px 2px 2px 2px ;
+    background-color: gray;
+    transition:ease-out 1s;
+}
+/* main{
+ 
+    width: 100%;
+   
+    
+} */
+.content-box{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color:rgb(240, 204, 207);
+  padding-left: 80px;
+  padding-right: 80px;
+  
+}
+.box-info{
+    height: 300px;
+    width: 400px;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+    background-color: aliceblue;
+    /* border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 50px;
+
+    
+ 
+
+}
+.box-info h2{
+    font-size: 60px;
+    color:rgb(240, 204, 207);
+    
+}
+.box-info p{
+ margin-top: 40px;
+ text-align: center;
+}
+.content-info{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+.content-info1{
+    width: 45%;
+    border: 2px solid white;
+    background-color:white;
+    line-height: 40px;
+    padding: 30px;
+}
+.content-info1 h3{
+    font-size: 30px;
+    font-weight: 600;
+    
+
+}
+.content-info2{
+    width: 45%;
+    /* border: 2px solid  #ec5e1c; */
+    background-color: #ec5e1c;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.content-info button{
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    border:  rgb(240, 204, 207);;
+    background-color:rgb(240, 204, 207);
+    padding: 15px;
+    width: 200px;
+    margin-top: 20px;
+}
+.content-info2 #content-info2{
+    margin-top: 50px;
+    font-weight:900;
+
+}
+#info1-poster{
+    background-image: url('https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/29fd0360109159e1970d573a/woman-sitting-sofa-with-laptop-legs.jpg');
+    background-size:cover;
+    background-position: center;
+    background-position: top;
+    height: 300px;
+  
+}
+#info2-poster{
+   background-image: url('	https://assets.nicepagecdn.com/11a8ddce/3502986/images/lovely-woman-using-laptop-office.jpg');
+    background-size:cover;
+    background-position: center;
+    background-position: top;
+    height: 300px;
+   
+ 
+}
+.content-info1,.content-info2{
+    margin: 5px;
+}
+/* Styling for the form */
+.form-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form button {
+    background-color: #ec5e1c;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #b30c00;
+}
