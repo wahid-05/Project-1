@@ -1,227 +1,153 @@
-*{
-    
+/* General styling */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.navbar{
-    /* border: solid; */
+
+/* Navbar styling */
+.navbar {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color:rgb(242, 242, 242)
-
-    
-
-    
-
+    background-color: rgb(242, 242, 242);
+    padding: 1rem 2rem;
 }
-.navbar .logo{
-    width: 50%;
-   
 
-  
+.navbar .logo img {
+    height: 50px;
+    width: auto;
 }
-.navbar .logo img{
-    /* height: 70px;
-    width: 80px; */
-    margin-left: 40px;
-    background-color: aliceblue;
- 
-}
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
-    padding: 1rem;
-    font-size: 20px;
-    margin: 10px;
-  
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: red;
-    transition: all 0.5s ease;
     text-decoration: underline;
 }
-/* hero section */
-/* https: //assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg */
 
+/* Hero Section */
 .hero {
-    /* border: solid; */
-        height: 65vh;
-        background-image: url(https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg);
-        background-size: cover;
-        background-position: center;
-        background-position: top;
-        display: flex;
-        margin-top:50px ;
-       
-    
-
-}
-.hero .hero-content{
-    
-    height: 100%;
+    height: 65vh;
+    background-image: url('https://assets.nicepagecdn.com/11a8ddce/3502986/images/pexels-photo-733500.jpg');
+    background-size: cover;
+    background-position: center top;
     display: flex;
- flex-direction: column;
- line-height: 60px;
- margin-top: 50px;
- padding-left: 50px;
-
-    
-}
-.hero .hero-content h1{
-    color: rgb(16, 16, 16);
-    font-size: 3rem;
-   
-}
-.hero .hero-content p{
-    color: rgb(44, 43, 43);
-    font-size: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.hero .hero-content h4 {
-    color: rgb(168, 163, 163);
-    font-size: 1.5rem;
-   
-}
-.hero .hero-content .btn{
-    /* display: flex; */
-        justify-content: center;
-        align-items:end;
-        padding: 9px 12px;
-        gap: 8px;
-        height: 40px;
-        width: 172px;
-        border: none;
-        background: #ec5e1c;
-        border-radius: 20px;
-        cursor: pointer;
-        font-size: 20px;
-        margin-top:50px ;
-        color: rgb(252, 253, 254);
-       
-    
-}
-.hero .hero-content .btn:hover{
-    box-shadow: 2px 2px 2px 2px ;
-    background-color: gray;
-    transition:ease-out 1s;
-}
-/* main{
- 
-    width: 100%;
-   
-    
-} */
-.content-box{
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color:rgb(240, 204, 207);
-  padding-left: 80px;
-  padding-right: 80px;
-  
-}
-.box-info{
-    height: 300px;
-    width: 400px;
-    /* border: 2px solid black; */
-    margin-top: 50px;
-    background-color: aliceblue;
-    /* border-radius: 10px; */
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 30px;
-    margin-bottom: 50px;
-
-    
- 
-
-}
-.box-info h2{
-    font-size: 60px;
-    color:rgb(240, 204, 207);
-    
-}
-.box-info p{
- margin-top: 40px;
- text-align: center;
-}
-.content-info{
-    display: flex;
-    justify-content:space-evenly;
-    margin-top: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-}
-.content-info1{
-    width: 45%;
-    border: 2px solid white;
-    background-color:white;
-    line-height: 40px;
-    padding: 30px;
-}
-.content-info1 h3{
-    font-size: 30px;
-    font-weight: 600;
-    
-
-}
-.content-info2{
-    width: 45%;
-    /* border: 2px solid  #ec5e1c; */
-    background-color: #ec5e1c;
-    color: aliceblue;
-    font-size: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-
-    
-}
-.content-info button{
+    justify-content: flex-start;
+    padding: 2rem;
     color: white;
-    font-size: 20px;
-    border-radius: 20px;
-    border:  rgb(240, 204, 207);;
-    background-color:rgb(240, 204, 207);
-    padding: 15px;
-    width: 200px;
-    margin-top: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
-.content-info2 #content-info2{
-    margin-top: 50px;
-    font-weight:900;
 
+.hero .hero-content {
+    max-width: 600px;
 }
-#info1-poster{
-    background-image: url('https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/29fd0360109159e1970d573a/woman-sitting-sofa-with-laptop-legs.jpg');
-    background-size:cover;
-    background-position: center;
-    background-position: top;
-    height: 300px;
-  
+
+.hero .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
-#info2-poster{
-   background-image: url('	https://assets.nicepagecdn.com/11a8ddce/3502986/images/lovely-woman-using-laptop-office.jpg');
-    background-size:cover;
-    background-position: center;
-    background-position: top;
-    height: 300px;
-   
- 
+
+.hero .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
-.content-info1,.content-info2{
-    margin: 5px;
+
+.hero .hero-content .btn {
+    padding: 0.8rem 1.5rem;
+    background: #ec5e1c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
+
+.hero .hero-content .btn:hover {
+    background: gray;
+}
+
+/* Content Box Styling */
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-color: rgb(240, 204, 207);
+}
+
+.box-info {
+    background: white;
+    width: calc(33.333% - 2rem);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.box-info:hover {
+    transform: translateY(-10px);
+}
+
+.box-info h2 {
+    font-size: 2rem;
+    color: rgb(240, 204, 207);
+    margin-bottom: 1rem;
+}
+
+.box-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Content Info Section */
+.content-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.content-info1,
+.content-info2 {
+    flex: 1 1 45%;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-info1 h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.content-info1 button {
+    margin-top: 1rem;
+    background-color: rgb(240, 204, 207);
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content-info1 button:hover {
+    background-color: gray;
+}
+
 /* Styling for the form */
 .form-section {
     background-color: #f9f9f9;
@@ -280,4 +206,48 @@
 
 .contact-form button:hover {
     background-color: #b30c00;
+} 
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-info {
+        width: 90%;
+    }
+
+    .content-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-info1,
+    .content-info2 {
+        flex: 1 1 100%;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 1.8rem;
+    }
 }
